@@ -26,7 +26,7 @@ $-font-color: #333;
   background-image: url($-bg) !important;
   background-size: 100% auto !important;
   background-repeat: repeat !important;
-  margin: 0 -2rem !important;
+  margin: 0 -2rem;
   display: flex !important;
   flex-direction: column !important;
   position: relative !important;
