@@ -18,22 +18,22 @@ $-font-color: #333;
 
 .markdown-body {
   word-break: break-word;
-  line-height: 1.75;
-  font-weight: 500;
-  font-size: 14px;
+  line-height: 1.75 !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
   overflow-x: hidden;
-  color: $-font-color;
-  background-image: url($-bg);
-  background-size: 100% auto;
-  background-repeat: repeat;
-  margin: 0 -2rem;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 1;
-  padding: 0 2rem 160px;
-  font-family: "Yuanti SC", "YouYuan", sans-serif;
-  transition: all .3s;
+  color: $-font-color !important;
+  background-image: url($-bg) !important;
+  background-size: 100% auto !important;
+  background-repeat: repeat !important;
+  margin: 0 -2rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  position: relative !important;
+  z-index: 1 !important;
+  padding: 0 2rem 180px !important;
+  font-family: "Yuanti SC", "YouYuan", sans-serif !important;
+  transition: all .3s !important;
 
   &:before {
     content: "";
