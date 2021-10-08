@@ -1,7 +1,12 @@
 {
-  "name": "juejin-markdown-theme-default",
+  "name": "juejin-markdown-theme-maidragon",
+  "author": "iota9star",
+  "homepage": "https://github.com/iota9star/juejin-markdown-theme-maidragon",
   "private": true,
   "license": "MIT",
+  "scripts": {
+    "preview": "npx juejin-theme-devtool maidragon.scss"
+  },
   "dependencies": {
     "bytemd": "^1.2.0"
   }

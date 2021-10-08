@@ -1,6 +1,6 @@
-# juejin 默认主题
+# 妹抖龙 主题
 
-主题列表：https://github.com/xitu/juejin-markdown-themes
+![](./screenshot.png)
 
 ## License
 
