@@ -18,11 +18,11 @@ $-font-color: #333;
 
 .markdown-body {
   word-break: break-word;
-  line-height: 1.75 !important;
-  font-weight: 500 !important;
-  font-size: 14px !important;
+  line-height: 1.75;
+  font-weight: 500;
+  font-size: 14px;
   overflow-x: hidden;
-  color: $-font-color !important;
+  color: $-font-color;
   background-image: url($-bg) !important;
   background-size: 100% auto !important;
   background-repeat: repeat !important;
@@ -32,7 +32,7 @@ $-font-color: #333;
   position: relative !important;
   z-index: 1 !important;
   padding: 0 2rem 180px !important;
-  font-family: "Yuanti SC", "YouYuan", sans-serif !important;
+  font-family: "Yuanti SC", "YouYuan", sans-serif;
   transition: all .3s !important;
 
   &:before {
@@ -370,6 +370,30 @@ $-font-color: #333;
     padding: 0.2em 0.8em;
     margin: 0 0.48em;
     line-height: 1.75;
+    position: relative;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    box-sizing: border-box;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: -4px;
+      top: -4px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $-red;
+      transition: all .3s;
+    }
+
+    &:hover {
+      border-color: $-green;
+
+      &:after {
+        background-color: $-orange;
+      }
+    }
   }
 
   pre {
@@ -387,6 +411,15 @@ $-font-color: #333;
       overflow-x: auto;
       border-radius: 8px;
       background: rgba(255, 255, 255, .9);
+      border: 4px solid transparent;
+
+      &:hover {
+        border-color: rgba($-green, .38);
+      }
+
+      &:after {
+        display: none;
+      }
     }
   }
 
