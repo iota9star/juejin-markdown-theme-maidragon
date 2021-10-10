@@ -4,6 +4,9 @@
   "homepage": "https://github.com/iota9star/juejin-markdown-theme-maidragon",
   "private": true,
   "license": "MIT",
+  "scripts": {
+    "preview": "jjsm maidragon.scss"
+  },
   "dependencies": {
     "bytemd": "^1.2.0"
   }
