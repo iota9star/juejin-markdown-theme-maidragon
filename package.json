@@ -6,14 +6,13 @@
   "license": "MIT",
   "scripts": {
     "preview": "jjsm maidragon.scss",
-    "build": "sass maidragon.scss maidragon.css && postcss maidragon.css --replace --use autoprefixer --map '.' && postcss maidragon.css > maidragon.min.css"
+    "build": "sass maidragon.scss maidragon.css && postcss maidragon.css --replace --use autoprefixer --map '.'"
   },
   "dependencies": {
     "bytemd": "^1.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.7",
-    "cssnano": "^5.0.8",
     "juejin-theme-devtool": "^0.0.1",
     "postcss": "^8.3.9",
     "postcss-cli": "^9.0.1",
