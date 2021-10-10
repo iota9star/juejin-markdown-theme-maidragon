@@ -1,14 +1,15 @@
 # 妹抖龙 主题
 
-## PC端  
+## PC端
+| light | dark |
+| --- | --- |  
+| ![light](./arts/p1.png) | ![dark](./arts/p2.png) |
 
-![](./arts/p1.png)  
+## 移动端
 
-## 移动端  
-
-![](./arts/m1.jpg)  
-
-![](./arts/m2.jpg)  
+| light | dark |
+| --- | --- |  
+| ![light](./arts/m1.jpg) | ![dark](./arts/m2.jpg) |
 
 ## License
 
