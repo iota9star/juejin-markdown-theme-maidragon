@@ -1,10 +1,10 @@
 $monospace-font: Menlo, Monaco, Consolas, 'Courier New', monospace;
 
-$-hover: "https://cdn.jsdelivr.net/gh/iota9star/juejin-markdown-theme-maidragon@master/assets/hover.svg";
-$-hat: "https://cdn.jsdelivr.net/gh/iota9star/juejin-markdown-theme-maidragon@master/assets/hat.png";
-$-dragon: "https://cdn.jsdelivr.net/gh/iota9star/juejin-markdown-theme-maidragon@master/assets/dragon.svg";
-$-float: "https://cdn.jsdelivr.net/gh/iota9star/juejin-markdown-theme-maidragon@master/assets/float.png";
-$-float2: "https://cdn.jsdelivr.net/gh/iota9star/juejin-markdown-theme-maidragon@master/assets/float2.png";
+$-hover: "//cdn.jsdelivr.net/gh/iota9star/juejin-markdown-theme-maidragon@master/assets/hover.svg";
+$-hat: "//cdn.jsdelivr.net/gh/iota9star/juejin-markdown-theme-maidragon@master/assets/hat.png";
+$-dragon: "//cdn.jsdelivr.net/gh/iota9star/juejin-markdown-theme-maidragon@master/assets/dragon.svg";
+$-float: "//cdn.jsdelivr.net/gh/iota9star/juejin-markdown-theme-maidragon@master/assets/float.png";
+$-float2: "//cdn.jsdelivr.net/gh/iota9star/juejin-markdown-theme-maidragon@master/assets/float2.png";
 $-yellow: #ffd913;
 $-orange: #ff9b00;
 $-green: #50aa32;
@@ -52,6 +52,7 @@ $-red: #fe226f;
   transition: all 0.3s !important;
   letter-spacing: 1px;
   min-height: 500px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
 
 
   &:before, &:after {
@@ -60,10 +61,6 @@ $-red: #fe226f;
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
-    -webkit-animation: floatit infinite 5.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) alternate;
-    -moz-animation: floatit infinite 5.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) alternate;
-    -o-animation: floatit infinite 5.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) alternate;
-    animation: floatit infinite 5.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) alternate;
     will-change: transform;
     pointer-events: none;
     z-index: -2;
@@ -75,6 +72,10 @@ $-red: #fe226f;
     height: 132px;
     right: -16px;
     top: 64px;
+    -webkit-animation: floatit infinite 5.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) alternate;
+    -moz-animation: floatit infinite 5.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) alternate;
+    -o-animation: floatit infinite 5.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) alternate;
+    animation: floatit infinite 5.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) alternate;
     background-image: url($-float);
   }
 
@@ -83,11 +84,12 @@ $-red: #fe226f;
     height: 176px;
     left: -64px;
     bottom: 4%;
+    opacity: 0.87;
     background-image: url($-float2);
-    -webkit-animation-delay: 1.2s;
-    -moz-animation-delay: 1.2s;
-    -o-animation-delay: 1.2s;
-    animation-delay: 1.2s;
+    -webkit-animation: floatit infinite 6.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) alternate;
+    -moz-animation: floatit infinite 6.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) alternate;
+    -o-animation: floatit infinite 6.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) alternate;
+    animation: floatit infinite 6.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) alternate;
   }
 
   h1,
@@ -100,6 +102,7 @@ $-red: #fe226f;
     margin-top: 28px;
     margin-bottom: 10px;
     color: $-green;
+    text-shadow: none;
     position: relative;
     z-index: 0;
 
@@ -219,6 +222,7 @@ $-red: #fe226f;
       font-weight: bold;
       line-height: 1;
       color: rgba($-orange, .1);
+      text-shadow: none;
     }
   }
 
@@ -336,6 +340,7 @@ $-red: #fe226f;
   a {
     text-decoration: none;
     color: $-orange;
+    text-shadow: none;
     position: relative;
     font-weight: bold;
     margin: 0 4px;
@@ -384,6 +389,7 @@ $-red: #fe226f;
     &:hover,
     &:active {
       color: $-red;
+      text-shadow: none;
 
       &:before {
         background-color: $-orange;
@@ -471,6 +477,7 @@ $-red: #fe226f;
     border-radius: 2px;
     overflow-x: auto;
     color: $-dark-green;
+    text-shadow: none;
     padding: 0 4px;
     line-height: 24px;
     position: relative;
@@ -537,6 +544,7 @@ $-red: #fe226f;
 
   blockquote {
     color: #444;
+    text-shadow: none;
     margin: 22px 0;
     padding: 1.6rem;
     background-color: rgba($-green, .1);
@@ -576,6 +584,7 @@ $-red: #fe226f;
       font-size: 56px;
       height: 56px;
       color: $-green;
+      text-shadow: none;
       position: absolute;
       right: -16px;
       bottom: 0;
@@ -598,11 +607,13 @@ $-red: #fe226f;
 
       &::marker {
         color: $-green;
+        text-shadow: none;
       }
 
       input[type="checkbox"] {
         background-color: transparent !important;
         color: transparent !important;
+        text-shadow: none;
         border: none !important;
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -669,6 +680,7 @@ $-red: #fe226f;
   ol > li {
     &::marker {
       color: $-green;
+      text-shadow: none;
       font-weight: bold;
       font-size: 18px;
     }
